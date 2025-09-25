@@ -1,3 +1,35 @@
-body{
-    background-color: hsl(275, 100%, 97%);
+html, body{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(275, 100%, 97%)
 }
+
+.outer-back{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 0.3fr;
+    grid-template-columns: 1fr;
+}
+
+.banner{
+    background-image: url(images/background-pattern-desktop.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    grid-area: 1 / 1;
+}
+
+.inner-back{
+    grid-area: 1 / 1;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: hsl(0, 100%, 100%);
+}
+
+
